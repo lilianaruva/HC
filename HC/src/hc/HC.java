@@ -20,22 +20,16 @@ public class HC extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        
-        try
-        {
-            Thread.sleep(5000);
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+               
+        Parent root = FXMLLoader.load(getClass().getResource("Loading.fxml"));
         
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
         stage.initStyle(StageStyle.UNDECORATED);
         stage.show();
-        }
-        catch(InterruptedException ex)
-        {
-            
-        }
+        
+        
     }
 
     /**
