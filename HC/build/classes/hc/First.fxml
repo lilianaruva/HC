@@ -21,16 +21,16 @@
       </Pane>
       <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="1109.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="btnMoon">
          <image>
-            <Image url="@icoMoon.png" />
+            <Image url="@ico/icoMoon.png" />
          </image>
       </ImageView>
       <TextArea layoutX="236.0" layoutY="604.0" prefHeight="159.0" prefWidth="704.0" style="-fx-background-radius: 10;" />
       <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="btnHelpB">
          <image>
-            <Image url="@icoHelpB.png" />
+            <Image url="@ico/icoHelpB.png" />
          </image>
       </ImageView>
-      <Pane id="BlackPane" disable="true" prefHeight="784.0" prefWidth="1176.0" style="-fx-background-color: # 000000;" visible="false">
+      <Pane id="BlackPane" disable="true" prefHeight="784.0" prefWidth="1176.0" style="-fx-background-color: # 000000;">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#000000a4" height="791.0" layoutX="-4.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1185.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d8dbe3" height="276.0" layoutX="459.0" layoutY="255.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="259.0" />
@@ -42,26 +42,26 @@
             </Label>
             <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="671.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true" styleClass="btnRefreshB">
                <image>
-                  <Image url="@icoRefreshB.png" />
+                  <Image url="@ico/icoRefreshB.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="484.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true" styleClass="btnCross">
                <image>
-                  <Image url="@icoCross.png" />
+                  <Image url="@ico/icoCross.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="639.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true" styleClass="btnCheck">
                <image>
-                  <Image url="@icoCheck.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="btnHelpW">
-               <image>
-                  <Image url="@icoHelpW.png" />
+                  <Image url="@ico/icoCheck.png" />
                </image>
             </ImageView>
             <Circle fill="#ffa91f8e" layoutX="-43.0" layoutY="-42.0" radius="34.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
          </children>
       </Pane>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="btnHelpW" visible="false">
+         <image>
+            <Image url="@ico/icoHelpW.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

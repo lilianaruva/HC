@@ -30,119 +30,121 @@
 
 .btnCross
 {
-    -fx-image:url("icoCross.png");
+    -fx-image:url("ico/icoCross.png");
 }
-.btnCross:hover{
-    -fx-image:url("icoCrossHover.png");
+.btnCross:hover
+{
+    -fx-image:url("ico/icoCrossHover.png");
 }
-.btnCross:pressed{
-    -fx-image:url("icoCross.png");
+.btnCross:pressed
+{
+    -fx-image:url("ico/icoCross.png");
 }
 .btnCheck
 {
-    -fx-image:url("icoCheck.png");
+    -fx-image:url("ico/icoCheck.png");
 }
 .btnCheck:hover
 {
-    -fx-image:url("icoCheckHover.png");
+    -fx-image:url("ico/icoCheckHover.png");
 }
 .btnCheck:pressed
 {
-    -fx-image:url("icoCheck.png");
+    -fx-image:url("ico/icoCheck.png");
 }
 .btnHelpW
 {
-    -fx-image:url("icoHelpW.png");    
+    -fx-image:url("ico/icoHelpW.png");    
 }
 .btnHelpW:hover
 {
-    -fx-image:url("icoHelpHover.png");        
+    -fx-image:url("ico/icoHelpWA.png");        
 }
 .btnHelpW:pressed
 {
-    -fx-image:url("icoHelpW.png");        
+    -fx-image:url("ico/icoHelpW.png");        
 }
 .btnHelpB
 {
-    -fx-image:url("icoHelpB.png");    
+    -fx-image:url("ico/icoHelpB.png");    
 }
 .btnHelpB:hover
 {
-    -fx-image:url("icoHelpHover.png");        
+    -fx-image:url("ico/icoHelpBA.png");        
 }
 .btnHelpB:pressed
 {
-    -fx-image:url("icoHelpB.png");        
+    -fx-image:url("ico/icoHelpB.png");        
 }
 .btnRefreshW
 {
-    -fx-image:url("icoRefreshW.png");        
+    -fx-image:url("ico/icoRefreshW.png");        
 }
 .btnRefreshW:hover
 {
-    -fx-image:url("icoRefreshHover.png");        
+    -fx-image:url("ico/icoRefreshHover.png");        
 }
 .btnRefreshW:pressed
 {
-    -fx-image:url("icoRefreshW.png");        
+    -fx-image:url("ico/icoRefreshW.png");        
 }
 .btnRefreshB
 {
-    -fx-image:url("icoRefreshB.png");        
+    -fx-image:url("ico/icoRefreshB.png");        
 }
 .btnRefreshB:hover
 {
-    -fx-image:url("icoRefreshHover.png");        
+    -fx-image:url("ico/icoRefreshHover.png");        
 }
 .btnRefreshB:pressed
 {
-    -fx-image:url("icoRefreshB.png");        
+    -fx-image:url("ico/icoRefreshB.png");        
 }
 .btnMoon
 {
-    -fx-image:url("icoMoon.png");        
+    -fx-image:url("ico/icoMoon.png");        
 }
 .btnMoon:hover
 {
-    -fx-image:url("icoMoonHover.png");        
+    -fx-image:url("ico/icoMoonP.png");        
 }
 .btnMoon:pressed
 {
-    -fx-image:url("icoMoon.png");        
+    -fx-image:url("ico/icoMoon.png");        
 }
 .btnEye
 {
-    -fx-image:url("icoEye.png");        
+    -fx-image:url("ico/icoEye.png");        
 }
 .btnEye:hover
 {
-    -fx-image:url("icoEyeHover.png");        
+    -fx-image:url("ico/icoEyeHover.png");        
 }
 .btnEye:pressed
 {
-    -fx-image:url("icoEye.png");        
+    -fx-image:url("ico/icoEye.png");        
 }
 .btnVoice
 {
-    -fx-image:url("icoVoice.png");        
+    -fx-image:url("ico/icoVoice.png");        
 }
 .btnVoice:hover
 {
-    -fx-image:url("icoVoiceHover.png");        
+    -fx-image:url("ico/icoVoiceHover.png");        
 }
 .btnVoice:pressed
 {
-    -fx-image:url("icoVoice.png");        
+    -fx-image:url("ico/icoVoice.png");        
 }
 .btnSave
 {
-    -fx-image:url("icoSave.png");        
+    -fx-image:url("ico/icoSave.png");        
 }
 .btnSave:hover
 {
-    -fx-image:url("icoSaveHover.png");        
+    -fx-image:url("ico/icoSaveHover.png");        
 }
 .btnSave:pressed
 {
-    -fx-image:url("icoSave.png");        
+    -fx-image:url("ico/icoSave.png");        
 }
