@@ -26,11 +26,7 @@ import javafx.stage.StageStyle;
  * @author lilyg
  */
 public class LoadingController implements Initializable {
-
-    /**
-     * Initializes the controller class.
-     */
-    
+       
     @FXML
     private StackPane rootPane;
     
@@ -43,35 +39,36 @@ public class LoadingController implements Initializable {
         @Override
         public void run()
         {
-            try {
+            try
+            {
                 Thread.sleep(5000);
                 
                 Platform.runLater(new Runnable() {
                     @Override
                     public void run() {
                         Parent root= null;
-                        try{
-                            root = FXMLLoader.load(getClass().getResource("First.fxml"));
+                        try {
+                            root = FXMLLoader.load(getClass().getResource("Active.fxml"));
+                        } catch (IOException ex) {
+                            Logger.getLogger(LoadingController.class.getName()).log(Level.SEVERE, null, ex);
                         }
-                        catch(IOException ex)
-                        {
-                            Logger.getLogger(LoadingController.class.getName()).log(Level.SEVERE,null,ex);
-                        }
-                         Scene scene = new Scene(root);
+                        Scene scene = new Scene(root);
                         Stage stage = new Stage();
                         stage.setScene(scene);
                         stage.show();
-                
+                /*
+                        Stage stg = (Stage) root.getScene().getWindow();
+                        stg.close();*/
                         rootPane.getScene().getWindow().hide();
-                  
-       
+                        
                     }
                 });
-               
-            } catch (InterruptedException ex) {
-                Logger.getLogger(LoadingController.class.getName()).log(Level.SEVERE, null, ex);
             }
+            catch(InterruptedException ex)
+            {
+                Logger.getLogger(LoadingController.class.getName()).log(Level.SEVERE,null,ex);
+            }         
         }
     }
-    
 }
+
