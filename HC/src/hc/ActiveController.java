@@ -10,7 +10,10 @@ package hc;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.animation.TranslateTransition;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.application.*;
+import javafx.animation.*;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -21,6 +24,8 @@ import javafx.util.Duration;
 //import java.awt.event.ActionEvent;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TextArea;
+import javafx.beans.property.*;
+
 
 /**
  * FXML Controller class
@@ -48,6 +53,8 @@ public class ActiveController implements Initializable {
     private Circle circleHelp;
     @FXML
     private Label labelHelp;
+    
+    private boolean status;
 
     /**
      * Initializes the controller class.
@@ -59,12 +66,69 @@ public class ActiveController implements Initializable {
     @FXML
     void btnHelpEvent(ActionEvent event) {
         paneHelp.setVisible(true);
-        TranslateTransition th = new TranslateTransition(Duration.seconds(2),circleHelp);
-        th.setToX(circleHelp.getLayoutX()+(10));
-        th.play();
-        
-     //   paneHelp.setVisible(false);
+        labelHelp.setText("");
+        final IntegerProperty i = new SimpleIntegerProperty(0);
+        Timeline timeline = new Timeline(
+            new KeyFrame(
+                Duration.seconds(3),
+                eventh -> {
+                    switch(i.get()){
+                        case 0:
+                            step(338, 0, false);
+                            labelHelp.setText("Escuchar la conversación");
+                            i.set(i.get() + 1);
+                            break;
+                        case 1:
+                            step(513, 0, false);
+                            labelHelp.setText("Visualizar la cámara");
+                            i.set(i.get() + 1);
+                            break;
+                        case 2:
+                            step(687, 0, false);
+                            labelHelp.setText("Guardar la conversación");
+                            i.set(i.get() + 1);
+                            break;
+                        case 3:
+                            step(1071, 0, false);
+                            labelHelp.setText("Cambiar a modo nocturno");
+                            i.set(i.get() + 1);
+                            break;
+                        case 4:
+                            step(500,300, true);
+                            labelHelp.setText("Visualización de la camara");
+                            i.set(i.get() + 1);
+                            break;
+                        case 5:
+                            step(500, 600, true);
+                            labelHelp.setText("Texto de la conversación");
+                            i.set(i.get() + 1);
+                            break;
+                        default:
+                            step(-38,-38,true);
+                            finish();
+                            break;
+                    }
+                } 
+            )
+        );
+timeline.setCycleCount(7);
+timeline.play();
     }
+    
+    void step(double x, double y, boolean s){
+         TranslateTransition th = new TranslateTransition(Duration.seconds(1),circleHelp);
+         th.setToX(circleHelp.getLayoutX() + x);
+         if(s){
+         th.setToY(circleHelp.getLayoutY() + y);
+         }
+         th.play();
+    }
+    
+    
+    void finish(){
+            paneHelp.setVisible(false);
+    }
+    
     @FXML
     void btnCheckEvent(ActionEvent event) {
         paneCamara.setVisible(false);

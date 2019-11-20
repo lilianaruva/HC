@@ -60,7 +60,6 @@ public class LoadingController implements Initializable {
                         Stage stg = (Stage) root.getScene().getWindow();
                         stg.close();*/
                         rootPane.getScene().getWindow().hide();
-                        
                     }
                 });
             }

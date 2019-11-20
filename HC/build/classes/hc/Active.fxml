@@ -46,9 +46,9 @@
       <Pane fx:id="paneCamara" prefHeight="792.0" prefWidth="1186.0">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#000000a4" height="803.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1194.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d8dbe3" height="276.0" layoutX="464.0" layoutY="258.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="259.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c9d9e" height="5.0" layoutX="484.0" layoutY="319.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="219.0" />
-            <Label layoutX="484.0" layoutY="289.0" prefHeight="30.0" prefWidth="219.0" text="Elegir cámara">
+            <Rectangle fx:id="paneC1" arcHeight="5.0" arcWidth="5.0" fill="#d8dbe3" height="276.0" layoutX="464.0" layoutY="258.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="259.0" />
+            <Rectangle fx:id="paneLine" arcHeight="5.0" arcWidth="5.0" fill="#9c9d9e" height="5.0" layoutX="484.0" layoutY="319.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="219.0" />
+            <Label fx:id="lbElegirC" layoutX="484.0" layoutY="289.0" prefHeight="30.0" prefWidth="219.0" text="Elegir cámara">
                <font>
                   <Font size="20.0" />
                </font>
